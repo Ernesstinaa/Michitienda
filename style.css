@@ -1,0 +1,197 @@
+/* ———————————— VARIABLES ———————————— */
+:root {
+  --rosa: #ffb6c1;
+  --rosa-claro: #ffe6eb;
+  --crema: #fffafc;
+  --marron: #5c4033;
+  --gris: #777;
+  --primary: #ff7da0;
+}
+
+
+
+/* ———————————— ESTILOS GENERALES ———————————— */
+body {
+  background-color: var(--crema);
+  font-family: "Poppins", sans-serif;
+  color: var(--marron);
+  line-height: 1.6;
+  padding-top: 80px; 
+}
+
+
+
+h2 {
+  color: var(--primary);
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+  color: var(--gris);
+}
+
+/* ———————————— NAVBAR ———————————— */
+.navbar {
+  background-color: var(--rosa-claro) !important;
+  box-shadow: 0 2px 10px rgba(255, 182, 193, 0.3);
+}
+
+.navbar-brand {
+  color: var(--primary) !important;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: var(--marron) !important;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary) !important;
+}
+
+
+  #carruselGatuno img {
+    height: 500px; /* ajustá el alto a gusto */
+    object-fit: cover; /* recorta sin deformar */
+  }
+
+
+/* ———————————— SECCIONES ———————————— */
+section {
+  padding: 4rem 2rem;
+}
+
+#SobreMiau, #MiauStyle {
+  background-color: var(--rosa-claro);
+  border-radius: 20px;
+  margin: 2rem auto;
+  max-width: 900px;
+  padding: 3rem;
+  box-shadow: 0 5px 15px rgba(255, 182, 193, 0.3);
+}
+
+/* ———————————— PRODUCTOS ———————————— */
+#productos {
+  background-color: var(--crema);
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(255, 192, 203, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 192, 203, 0.6);
+}
+
+.card-img-top img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-body {
+  text-align: center;
+  background-color: white;
+}
+
+.card-title {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.card-footer {
+  background-color: white;
+  border-top: 1px solid #f4c2c2;
+}
+
+/* ———————————— BOTONES Y RADIO BUTTONS ———————————— */
+.btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-outline-primary:hover,
+.btn-check:checked + .btn-outline-primary {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ff4f7d;
+}
+
+/* ———————————— FORMULARIO ———————————— */
+form {
+  max-width: 700px;
+  margin: 4rem auto;
+  background: var(--rosa-claro);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(255, 182, 193, 0.3);
+}
+
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #ffc1cc;
+}
+
+label {
+  color: var(--marron);
+  font-weight: 500;
+}
+
+/* ———————————— MODAL ———————————— */
+.modal-content {
+  background-color: var(--rosa-claro);
+  color: var(--marron);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.4);
+}
+
+.modal-title {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* ———————————— RESPONSIVE ———————————— */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  form {
+    padding: 2rem;
+  }
+}
+
+#boton-volver {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  background-color: pink;
+  color: white;
+}
+#boton-volver:hover {
+  background-color: hotpink;
+}
