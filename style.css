@@ -188,6 +188,7 @@ label {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  z-index: 9999; 
   border-radius: 50%;
   background-color: pink;
   color: white;
@@ -195,3 +196,4 @@ label {
 #boton-volver:hover {
   background-color: hotpink;
 }
+
