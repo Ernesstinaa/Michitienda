@@ -16,12 +16,13 @@ body {
   font-family: "Poppins", sans-serif;
   color: var(--marron);
   line-height: 1.6;
-  padding-top: 80px; 
+  padding-top: 0px; 
 }
 
 
 
 h2 {
+  color: #fffafc;
   color: var(--primary);
   text-align: center;
   font-weight: 700;
@@ -135,6 +136,21 @@ section {
 .btn-primary:hover {
   background-color: #ff4f7d;
 }
+
+/* ———————————— FOOTER———————————— */
+
+.redes {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  list-style: none; /* quita los puntos */
+  padding: 0;
+  margin: 0;
+}
+
+.redes li {
+  margin: 0 10px; /* separa los iconos entre sí */
+}
+
 
 /* ———————————— FORMULARIO ———————————— */
 form {
